@@ -23,13 +23,3 @@ Requiring external module babel-core/register,  create a .babelrc file in the pr
 
 Source: https://github.com/bivainis/NG6-starter-sass
 
-
-
-
-<p align="center">
-  <a href="http://courses.angularclass.com/courses/angular-2-fundamentals" target="_blank">
-    <img width="438" alt="Angular 2 Fundamentals" src="https://cloud.githubusercontent.com/assets/1016365/17200649/085798c6-543c-11e6-8ad0-2484f0641624.png">
-  </a>
-</p>
-
----
