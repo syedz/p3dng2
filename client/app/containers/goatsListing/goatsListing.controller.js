@@ -5,7 +5,7 @@ class GoatsListingController {
     // This will keep the service instance across our class
     this.GoatsService = GoatsService;
 
-    // this will gold our goatsList, it will be passed to the other components.
+    // this will hold our goatsList, it will be passed to the other components.
     this.goatsList = [];
   }
 

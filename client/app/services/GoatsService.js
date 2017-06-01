@@ -7,7 +7,7 @@ function GoatsService() {
             name: "Goat 1",
             age: 23,
             about: "I'm a demo goat, and this is my bio",
-            photo: "http://images.northrup.org/picture/xl/animals/billy-goat-profile1.jpg"
+            photo: "app/images/house_goat.jpg"
         }
     ];
 
