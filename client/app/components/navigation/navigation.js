@@ -1,13 +1,8 @@
-import angular from 'angular';
-import uiRouter from 'angular-ui-router';
-import navigationComponent from './navigation.component';
+import angular              from 'angular';
+import navigationComponent  from './navigation.component';
 
-let navigationModule = angular.module('navigation', [
-  uiRouter
-])
+let navigationModule = angular.module('navigation', [])
 
-.component('navigation', navigationComponent)
-
-.name;
+.component('navigation', navigationComponent);
 
 export default navigationModule;

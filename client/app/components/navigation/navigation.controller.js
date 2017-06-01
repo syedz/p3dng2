@@ -1,6 +1,7 @@
 class NavigationController {
   constructor() {
-    this.name = 'navigation';
+    "ngInject";
+
   }
 }
 
