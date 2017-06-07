@@ -16,7 +16,7 @@ import webpachHotMiddelware from 'webpack-hot-middleware';
 import colorsSupported      from 'supports-color';
 import historyApiFallback   from 'connect-history-api-fallback';
 
-let root = 'client';
+let root = 'base';
 
 // helper method for resolving paths
 let resolveToApp = (glob = '') => {
@@ -24,7 +24,7 @@ let resolveToApp = (glob = '') => {
 };
 
 let resolveToComponents = (glob = '') => {
-  return path.join(root, 'app/components', glob); // app/components/{glob}
+  return path.join(root, 'app/stateless-components', glob); // app/stateless-components/{glob}
 };
 
 // map of all paths
@@ -93,7 +93,7 @@ gulp.task('serve', () => {
 
 gulp.task('watch', ['serve']);
 
-gulp.task('component', () => {
+gulp.task('generateComponent', () => {
   const cap = (val) => {
     return val.charAt(0).toUpperCase() + val.slice(1);
   };
@@ -107,7 +107,7 @@ gulp.task('component', () => {
       upCaseName: cap(name)
     }))
     .pipe(rename((path) => {
-      path.basename = path.basename.replace('temp', name);
+      path.basename = path.basename.replace('sample', name);
     }))
     .pipe(gulp.dest(destPath));
 });

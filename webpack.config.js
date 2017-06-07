@@ -35,7 +35,7 @@ module.exports = {
     // It also adds hash to all injected assets so we don't have problems
     // with cache purging during deployment.
     new HtmlWebpackPlugin({
-      template: 'client/index.html',
+      template: 'base/index.html',
       inject: 'body',
       hash: true
     }),
@@ -45,7 +45,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
       minChunks: function (module, count) {
-        return module.resource && module.resource.indexOf(path.resolve(__dirname, 'client')) === -1;
+        return module.resource && module.resource.indexOf(path.resolve(__dirname, 'base')) === -1;
       }
     })
   ]
